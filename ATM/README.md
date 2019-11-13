@@ -13,7 +13,7 @@
 ## Overview
 Loomis supports the creation of Incidents for ATM service through the exchange of files using SFTP.  
 
-![](/Loomis-us-sp/Incidents/edit/master/ATM/atmflow.png)
+![](/Loomis-us-sp/Incidents/blob/master/ATM/atmflow.png)
 
 Customers will upload request files to Loomis and can expect update messages for **ACK**, **NAK**, **Accept**, **Close** and **Cancel**.
 
