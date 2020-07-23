@@ -37,7 +37,7 @@ Below is out recommendation for the incoming Dispatch requests file names.<br/>
 Loomis uses the following file naming convention for the outgoing files.
 
 #### Naming
-\<Bank Name>\_\<File DateTime in UTC>\_\<Message Type>.xml
+\<Bank Name>\_\<File DateTime in UTC>\_\<ATM Id>\_\<Message Type>.xml
 
 #### Message Types
 | Message Type | Details                                                |
@@ -52,19 +52,19 @@ Loomis uses the following file naming convention for the outgoing files.
 #### Examples
 ##### Inbound Service Dispatch Request Message
 ```
-ExampleBank_20191024102530_dispatch.xml
+ExampleBank_20191024102530_A123456_dispatch.xml
 ```
 ##### Outbound Acknowledgement Message:
 ```
-ExampleBank_20191024102530_ack.xml
+ExampleBank_20191024102530_A123456_ack.xml
 ``` 
 ##### Outbound Accept/ETA Message:
 ```
-ExampleBank_20191024102530_accept.xml
+ExampleBank_20191024102530_A123456_accept.xml
 ``` 
 ##### Outbound Closed Message:
 ```
-ExampleBank_20191024102530_close.xml
+ExampleBank_20191024102530_A123456_close.xml
 ``` 
 
 
@@ -76,13 +76,12 @@ The Dispatch message is sent by a customer to request an ATM service. The reques
 
 #### Message Format
 ```xml
-<Incidents>
-  <Incident>
+<Incident>
     <MessageType>Dispatch</MessageType>
     <CustomerId>1234567</CustomerId> 
     <ServiceProvider>LOOMIS</ServiceProvider>  
     <IncidentReference>178788692</IncidentReference>
-    <DeviceId>CU560572</deviceId>
+    <DeviceId>A123456</deviceId>
     <DeviceStatus>Active</DeviceStatus>
     <FaultCode>EmergencyDepositPull</FaultCode>
     <FaultDateTime>2018-11-16T15:17:48Z</FaultDateTime>
@@ -95,8 +94,7 @@ The Dispatch message is sent by a customer to request an ATM service. The reques
       <Amount currency="USD" denomination="50">1050</Amount>
       <Amount currency="USD" denomination="100">1100</Amount>
     </Amounts>
-  <Incident>
-</Incidents>
+<Incident>
 ```
 
 #### Data Definitions 
