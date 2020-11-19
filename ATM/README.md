@@ -81,7 +81,7 @@ The Dispatch message is sent by a customer to request an ATM service. The reques
     <CustomerId>1234567</CustomerId> 
     <ServiceProvider>LOOMIS</ServiceProvider>  
     <IncidentReference>178788692</IncidentReference>
-    <DeviceId>A123456</deviceId>
+    <DeviceId>A123456</DeviceId>
     <DeviceStatus>Active</DeviceStatus>
     <FaultCode>EmergencyDepositPull</FaultCode>
     <FaultDateTime>2018-11-16T15:17:48Z</FaultDateTime>
