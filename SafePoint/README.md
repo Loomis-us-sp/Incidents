@@ -45,7 +45,7 @@ The Dispatch message is sent by a customer to request an SafePoint service. The 
 	"CustomerNumber": "A123456",
 	"IncidentReference": "100001",
 	"DeviceId": "UG1234",
-	"ContactName": "John Smith"
+	"ContactName": "John Smith",
 	"ContactNumber": "123-123-1234",
 	"ContactEmail": "john.smith@examplecustomer.com",
 	"Subject": "Safe Door Issue",
