@@ -14,7 +14,7 @@
 ## Overview
 Loomis supports the creation of Incidents for ATM service through REST based web services.  
 
-![](https://h2-vspghe01.corp.lfco.cc/CIT/LoomisDirect.SpringSafepointServices/blob/master/Images/atmflow.png)
+![](./atmflow.png)
 
 Customers will send **Dispatch** requests and can expect update messages for **ACK**, **NAK**, **Accept**, **Close** and **Cancel**.
 
